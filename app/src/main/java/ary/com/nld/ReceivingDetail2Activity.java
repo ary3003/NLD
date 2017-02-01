@@ -19,14 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
-/*    *********************************************************************************************
 
-                     A FOLLOW UP TO THE ReceivingDetailActivity, THIS ACTIVITY LIST THE DETAILS OF THE PRODUCT
-                     RECEIVED ON ANY GIVEN DATE.
-
-
-***************************************************************************************************
- */
 
 public class ReceivingDetail2Activity extends AppCompatActivity {
 
