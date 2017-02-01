@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Product:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/productLabel"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product"
+        android:layout_alignBaseline="@+id/productLabel"
+        android:layout_alignBottom="@+id/productLabel"
+        android:layout_toEndOf="@+id/productLabel"
+        android:layout_marginStart="68dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="MRP:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productLabel"
+        android:layout_toStartOf="@+id/product"
+        android:layout_marginTop="38dp"
+        android:id="@+id/mrpLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mrpLabel"
+        android:layout_alignStart="@+id/product"
+        android:id="@+id/mrp" />
+
+    <TextView
+        android:text="Trade:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mrpLabel"
+        android:layout_alignStart="@+id/mrpLabel"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tradeLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tradeLabel"
+        android:layout_alignStart="@+id/mrp"
+        android:id="@+id/trade"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="EXP:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tradeLabel"
+        android:layout_alignStart="@+id/tradeLabel"
+        android:layout_marginTop="32dp"
+        android:id="@+id/expLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/expLabel"
+        android:layout_toEndOf="@+id/trade"
+        android:id="@+id/exp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Batch:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expLabel"
+        android:layout_alignStart="@+id/expLabel"
+        android:layout_marginTop="36dp"
+        android:id="@+id/batchLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/batchLabel"
+        android:layout_toEndOf="@+id/exp"
+        android:id="@+id/batch" />
+</RelativeLayout>
